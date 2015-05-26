@@ -11,8 +11,8 @@ mv ~/.vimrc ~/.vimrc.back || echo 'no .vimrc'
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 vim +BundleInstall +qall
 
-git config --global user.name "niquola"
-git config --global user.email "niquola@gmail.com"
+git config --global user.name "BazZy"
+git config --global user.email "bazzy.bazzy@gmail.com"
 git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.st status
