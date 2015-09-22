@@ -19,3 +19,5 @@ map <C-k> nextTab
 map <C-z> goBack
 map z goBack
 map Z goBack
+map u goBack
+map <C-r> goForward
