@@ -1,0 +1,18 @@
+# This file doesn't actually do anything, but copy these settings into
+# the "Custom key mappings" section of the Vimium for Chrome settings page
+# Insert your prefered key mappings here.
+unmap <c-e>
+unmap <c-y>
+unmap zH
+unmap zL
+unmap d
+unmap u
+unmap gu
+unmap J
+unmap K
+map <C-f> scrollPageDown
+map <C-b> scrollPageUp
+map <C-h> moveTabLeft
+map <C-l> moveTabRight
+map <C-j> previousTab
+map <C-k> nextTab
