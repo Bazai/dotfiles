@@ -16,3 +16,6 @@ map <C-h> moveTabLeft
 map <C-l> moveTabRight
 map <C-j> previousTab
 map <C-k> nextTab
+map <C-z> goBack
+map z goBack
+map Z goBack
