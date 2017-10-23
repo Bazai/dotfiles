@@ -1,1 +1,84 @@
-/Users/bazzy/Dropbox/dotfiles/.ideavimrc
+" For inspiration look at this configs:
+" https://github.com/beloglazov/vimrc/blob/master/.ideavimrc
+" https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
+" https://github.com/vbauerster/dotfiles/blob/master/ideavimrc
+set visualbell
+set noerrorbells
+set hlsearch
+set scrolloff=3
+set ignorecase smartcase
+set showmode
+set history=1000
+set surround
+
+" Reload .ideavimrc
+nnoremap <space>vs :source ~/.ideavimrc<CR>
+nnoremap <space>feR :source ~/.ideavimrc<CR>
+nnoremap <space>fed :e ~/.ideavimrc<cr>
+
+" nnoremap yy "+yy
+" vnoremap y "+y
+" 
+" nnoremap p "+p
+" vnoremap p "+p
+" nnoremap P "+P
+" vnoremap P "+P
+
+" Create window splits easier. The default
+" way is Ctrl-w,v and Ctrl-w,s. I remap
+" this to vv and ss
+nnoremap <space>vv <C-w>v
+nnoremap <space>ss <C-w>s
+nnoremap <space>wv <C-w>v
+nnoremap <space>ws <C-w>s
+
+
+" easy window navigation
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+
+" ============================================================================
+" Editing
+" ============================================================================
+
+" Moving blocks of text in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" code refactoring
+nnoremap <space>rr :action RenameElement<cr>
+
+
+" built-in navigation to navigated items works better
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+" but preserve ideavim defaults
+nnoremap g<c-o> <c-o>
+nnoremap g<c-i> <c-i>
+
+" built in search looks better
+nnoremap / :action Find<cr>
+" but preserve ideavim search
+nnoremap g/ /
+
+" ============================================================================
+" IDE actions
+" ============================================================================
+
+nnoremap / :action Find<CR>
+nnoremap n :action FindNext<CR>
+nnoremap N :action FindPrevious<CR>
+nnoremap U :action $Redo<CR>
+nnoremap ; :action AceJumpAction<CR>
+nnoremap <Space>o :action GotoClass<CR>
+nnoremap <Space>O :action GotoFile<CR>
+nnoremap <Space>wd :action CloseContent<CR>
+nnoremap <Space>j :action RecentFiles<CR>
+nnoremap <Space>k :action FileStructurePopup<CR>
+nnoremap <Space>h :action QuickJavaDoc<CR>
+nnoremap <Space>gb :action Annotate<CR>
+nnoremap <Space>gh :action Vcs.ShowTabbedFileHistory<CR>
+nnoremap <Space>gl :action Vcs.Show.Log<CR>
+nnoremap <Space>gs :action Vcs.Show.Local.Changes<CR>
