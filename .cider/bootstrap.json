@@ -1,0 +1,35 @@
+{
+    "after-scripts": [
+        "brew linkapps"
+    ],
+    "casks": [
+        "dropbox",
+        "google-chrome",
+        "iterm2",
+        "sublime-text"
+    ],
+    "formulas": [
+        "brew-cask",
+        "git",
+        "ack",
+        "cuty_capt",
+        "editorconfig",
+        "exa",
+        "fasd",
+        "git",
+        "leiningen",
+        "openssl",
+        "the_silver_searcher",
+        "thefuck",
+        "tmux",
+        "tree",
+        "wget",
+        "wxmac",
+        "yadm",
+        "youtube-dl",
+        "zsh"
+    ],
+    "taps": [
+        "caskroom/cask"
+    ]
+}
